@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- row -> tr 
+    column -> td  -->
+
+    <!-- th  -->
+
+    <!-- srno , name , address , city , mobile , state
+    6 -->
+
+    <!-- cellpadding -> inner space  -->
+    <!-- cellspacing -> outer space -->
+
+    <!-- tabular layout  -->
+    <table
+      border="1"
+      width="1000px"
+      align="center"
+      cellpadding="16px"
+      cellspacing="0px"
+    >
+      <thead bgcolor="skyblue">
+        <tr>
+          <th colspan="2">Employee Details</th>
+          <th colspan="4">Personal Details</th>
+        </tr>
+        <tr>
+          <th>Sr no</th>
+          <th>Name</th>
+          <th>Address</th>
+          <th>City</th>
+          <th>Mobile</th>
+          <th>State</th>
+        </tr>
+      </thead>
+
+      <tbody bgcolor="grey">
+        <tr>
+          <td>1</td>
+          <td>Parth</td>
+          <td>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi!
+          </td>
+          <td>Daman</td>
+          <td>7894563210</td>
+          <td>Daman</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Dev</td>
+          <td>Lorem ipsum dolor, sit amet consectetur adipisicing.</td>
+          <td>Surat</td>
+          <td>5469871230</td>
+          <td rowspan="5">Gujrat</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Kritika</td>
+          <td>Lorem ipsum dolor, sit amet consectetur adipisicing.</td>
+          <td>Rajkot</td>
+          <td>5469871230</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Roshni</td>
+          <td>Lorem ipsum dolor, sit amet consectetur adipisicing.</td>
+          <td rowspan="3">Surat</td>
+          <td>5469871230</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Gaurav</td>
+          <td>Lorem ipsum dolor, sit amet consectetur adipisicing.</td>
+          <td>5469871230</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Anjali</td>
+          <td>Lorem ipsum dolor, sit amet consectetur adipisicing.</td>
+          <td>5469871230</td>
+        </tr>
+      </tbody>
+
+      <tfoot bgcolor="lightyellow">
+        <tr>
+          <td colspan="6">Total Employee : 6</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- <p>1200&euro; &DoubleLongLeftArrow; &lt;	 </p> -->
+    <!-- enitities -->
+    <!-- <p>Sr no Name</p>
+    <p>1 &nbsp; &nbsp; &nbsp; Parth</p> -->
+  </body>
+</html>

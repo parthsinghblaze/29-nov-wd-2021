@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 90%;
+            margin: 100px auto;
+            border: 2px solid black;
+            display: grid;
+            color: white;
+            /* grid-template-columns: min-content; */
+            /* grid-template-columns: max-content; */
+            grid-template-columns: minmax(500px , 1000px);
+            
+        }
+
+        .box{
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus voluptate explicabo accusamus, nulla obcaecati voluptatem doloribus, natus facilis quo incidunt, earum debitis quos sed velit. Consectetur exercitationem ut temporibus.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

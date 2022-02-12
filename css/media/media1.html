@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      header {
+        width: 100%;
+        height: 100px;
+        background-color: skyblue;
+      }
+      /*  
+        < 576px  mobile device
+        >= 576px small => tablet device , red
+        >= 768px mediam => small desktop , blue
+        >= 992px large => laptop , computer , green
+        >= 1200px extra large =>  computer , black
+        >= 1400px extra extra large => computer , orange
+        */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      @media screen and (max-width: 576px) {
+        header {
+          background-color: slateblue;
+        }
+      }
+
+      /* tablet */
+      @media screen and (min-width: 576px) {
+        header {
+          background-color: red;
+        }
+      }
+
+      /* small desktop */
+
+      @media screen and (min-width : 768px) {
+          header{
+              background-color: blue;
+          }
+      }
+
+      /* laptop */
+
+      @media screen and (min-width : 992px) and (max-width : 1199px) {
+          header{
+              background-color: green;
+              display: none;
+          }
+      }
+
+      @media screen and (min-width : 1200px) {
+          header{
+              background-color: black;
+          }
+      }
+
+      @media screen and (min-width : 1400px) {
+          header{
+              background-color: orange;
+              height: 300px;
+          }
+      }
+
+      /* JS => Advance / react / */
+
+      /* @media screen and (min-width : 0) and (max-width : 768px){
+
+            header{
+                background-color: red;
+                height: 100vh;
+            }
+
+        } */
+
+      /* @media screen and (max-width : 768px) {
+            header{
+                background-color: red;
+            }
+        } */
+    </style>
+  </head>
+  <body>
+    <header></header>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- red , blue , skyblue  -->
+  <!-- we can apply color in 4 ways 
+    1 -> color name 
+    2 -> hexcolor (opacity)
+    3 -> rgb(red,green,blue)
+    4 -> rgba(red,green,blue,alpha(opacity))
+
+-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .box {
+        width: 200px;
+        height: 200px;
+        margin: 100px auto;
+      }
+
+      .box1 {
+        background-color: red;
+      }
+
+      .box2 {
+        background-color: #31ebd210;
+      }
+
+      .box3 {
+        /* 0 -255 */
+        background-color: rgb(103, 230, 0);
+      }
+
+      .box4 {
+        background-color: red;
+        opacity: 50%;
+      }
+
+      .box5 {
+        background-color: rgba(255, 0, 0, 50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4">
+      <h1>Box4</h1>
+    </div>
+    <div class="box box5">
+      <h1>Box 5</h1>
+    </div>
+  </body>
+</html>

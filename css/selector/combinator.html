@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- 
+        there are 4 type of combinator seclector
+        1 -> decendant selector (space)
+        2 -> direct child selector (>)
+        3 -> general sibling selector (~)
+        4 -> adjacent sibling selector (+)
+     -->
+    <style>
+      div {
+        border: 2px solid black;
+      }
+      /* div p {
+        color: red;
+      }
+
+      ul li {
+        color: blue;
+      }
+
+      ul li ul li {
+        color: green;
+      } */
+
+      /* + => select the one element after div  */
+      /* ~ => select all the element after div */
+
+      div ~ p {
+        color: red;
+      }
+
+      div > p {
+        color: blue;
+      }
+
+      section {
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum
+        fugit veritatis unde pariatur porro ab, mollitia at iure doloribus
+        suscipit dignissimos voluptate labore corrupti culpa. Saepe vero
+        provident fugit?
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur,
+        animi sit. Libero facere beatae, dolor minus, molestias quaerat rem
+        maiores eos, ex quas alias nobis in sit impedit odit nulla!
+      </p>
+      <section>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
+          reprehenderit aperiam odit eligendi commodi deleniti laboriosam
+          debitis numquam autem nobis dolore similique et, impedit cum quia
+          doloribus accusamus earum voluptatem?
+        </p>
+      </section>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+        molestias, sit ut natus accusantium dolor ipsam soluta, quos magni
+        necessitatibus cum voluptatum quod aspernatur! Dicta odio autem in a
+        quaerat?
+      </p>
+      <ul>
+        <li>Samsung</li>
+        <li>Mi</li>
+        <li>
+          Apple
+          <ul>
+            <li>Iphone X</li>
+            <li>Iphone X</li>
+            <li>Iphone X</li>
+            <li>Iphone X</li>
+          </ul>
+        </li>
+        <li>Nokia</li>
+      </ul>
+    </div>
+    <!-- ---------------------- -->
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque obcaecati
+      qui quidem aliquam numquam recusandae earum minima dolor maxime debitis.
+      Optio cumque amet commodi! Illo rerum eius aliquam repellat voluptatibus?
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum nihil
+      deserunt sed quod eum officia molestiae repudiandae saepe? Eos
+      consequuntur sapiente vel libero quisquam nisi veniam molestiae nulla ut
+      hic.
+    </p>
+  </body>
+</html>

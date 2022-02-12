@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 1200px;
+            margin: 100px auto;
+            border: 4px solid black;
+            display: grid;
+            grid-template-rows: 200px 200px 200px;
+            grid-template-columns: 1fr 1fr;
+            /* grid-row-gap: 20px;
+            grid-column-gap: 20px; */
+            gap: 10px;
+            /* fr  => fractional Unit*/
+        }
+
+        .box1{
+            background-color: crimson;
+        }
+
+        .box2{
+            background-color: darkblue;
+        }
+
+        .box3{
+            background-color: darkgreen;
+        }
+
+        .box4{
+            background-color: darkkhaki;
+        }
+
+        .box5{
+            background-color: darkorange;
+        }
+
+        .box6{
+            background-color: deeppink;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box box1">
+            <h1>Box1</h1>
+        </div>
+        <div class="box box2">
+            <h1>Box2</h1>
+        </div>
+        <div class="box box3">
+            <h1>Box3</h1>
+        </div>
+        <div class="box box4">
+            <h1>Box4</h1>
+        </div>
+        <div class="box box5">
+            <h1>Box5</h1>
+        </div>
+        <div class="box box6">
+            <h1>Box6</h1>
+        </div>
+    </div>
+
+</body>
+</html>

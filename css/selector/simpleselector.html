@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- 
+        1 -> simple selector 
+        2 -> combinator selector
+        3 -> attribute selector
+        4 -> pseudo class 
+        5 -> pseudo element
+     -->
+
+  <!-- 
+         in simple selector there are 4 type 
+         1 -> tag selector (h1 , h2)
+         2 -> class selector (.)
+         3 -> id selector (#)
+         4 -> universal selector (*)
+      -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .heading1 {
+        color: red;
+        background-color: black;
+      }
+
+      .heading2 {
+        color: blue;
+      }
+
+      .heading3 {
+        color: green;
+      }
+
+      .intro {
+        font-size: 100px;
+      }
+
+      .mypara2 {
+        background-color: black;
+      }
+
+      .mypara {
+        color: greenyellow;
+        background-color: green;
+      }
+
+      #heading3 {
+        color: aqua;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h3 id="heading3">I am ID Selector</h3>
+
+    <!-- we can apply more then one classes in one tag  -->
+    <h1 class="heading1 intro">Hello World 1</h1>
+    <h1 class="heading2">Hello World 2</h1>
+    <h1 class="heading3 intro">Hello World 3</h1>
+    <h1 class="heading1">Hello World 4</h1>
+    <p class="mypara mypara2">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia suscipit
+      voluptatem soluta eum qui ullam ab doloribus molestias delectus optio
+      obcaecati laboriosam iure, ad, aliquam sed officiis aspernatur error
+      corrupti.
+    </p>
+  </body>
+</html>

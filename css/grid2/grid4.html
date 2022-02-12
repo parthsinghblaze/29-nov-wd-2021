@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 90%;
+        height: 500px;
+        margin: 100px auto;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+      }
+
+      .box1 {
+        background-color: crimson;
+      }
+
+      .box2 {
+        background-color: darkblue;
+      }
+
+      .box3 {
+        background-color: darkcyan;
+        grid-row: 1 / 3;
+        grid-column: 3 / 4;
+      }
+
+      .box4 {
+        background-color: darkgreen;
+      }
+
+      .box5 {
+        background-color: darkmagenta;
+        grid-row: 2 / 3;
+        grid-column: 1 / 3;
+      }
+
+      .box6 {
+        background-color: darkorange;
+      }
+
+      .box7 {
+        background-color: darkslategray;
+      }
+
+      .box8 {
+        background-color: deepskyblue;
+      }
+
+      .box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1">
+        <img src="sq1.jpg" alt="" />
+      </div>
+      <div class="box box2">
+        <img src="sq2.jpg" alt="" />
+      </div>
+      <div class="box box3">
+        <img src="vr.jpg" alt="">
+      </div>
+      <div class="box box4">
+        <img src="sq3.jpg" alt="" />
+      </div>
+      <div class="box box5">
+        <img src="hr.jpg" alt="">
+
+      </div>
+      <div class="box box6">
+        <img src="sq4.jpg" alt="" />
+      </div>
+    </div>
+  </body>
+</html>

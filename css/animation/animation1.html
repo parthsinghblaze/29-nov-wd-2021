@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box{
+            width: 300px;
+            height: 200px;
+            background-color: aqua;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation-name: move;
+            animation-duration: 5s;
+        }
+
+        /* we have to create an animation */
+
+        @keyframes move {
+            0%{
+                top: 0;
+                left: 0;
+            }
+
+            25%{
+                top: 0;
+                left: 400px;
+                background-color: violet;
+                width: 200px;
+                transform: none;
+            }
+
+            50%{
+                top: 300px;
+                left: 400px;
+                transform:perspective(700px) rotateX(180deg);
+            }
+
+            75%{
+                top: 300px;
+                left: 0;
+                border-radius: 50%;
+            }
+
+            100%{
+                top: 0;
+                left: 0;
+            }
+
+            /* from {
+                top: 0;
+                left: 0;
+                background-color: transparent;
+            }
+            to {
+                top: 0;
+                left: 500px;
+            } */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Animation Box</h1>
+    </div>
+</body>
+</html>

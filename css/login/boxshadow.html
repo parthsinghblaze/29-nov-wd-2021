@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: transparent;
+            margin: 100px auto;
+            /* box-shadow: x y spreading  color; */
+            /* box-shadow: 10px 10px 10px red; */
+            /* box-shadow: 10px 10px 4px red; */
+            /* box-shadow: 0 0 10px red; */
+            /* box-shadow: 10px 10px 10px red, -10px -10px 10px green; */
+            box-shadow: inset 10px 10px 10px black ,inset -10px -10px 10px red;
+            transition-duration: .6s;
+        }
+
+        .box:hover{
+            box-shadow: 10px 10px 10px black , -10px -10px 10px red ;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    </div>
+</body>
+</html>

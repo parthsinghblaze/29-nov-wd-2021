@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .box{
+            width: 70%;
+            margin: 100px auto;
+            text-align: center;
+        }
+
+        h1{
+            font-size: 100px;
+            animation-name: zooming;
+            animation-duration: 1s;
+          animation-timing-function:cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+        }
+
+        p{
+            font-size: 24px;
+            padding: 20px 0;
+            animation-name: movingUp;
+            animation-duration: 1s;
+
+        }
+
+        @keyframes zooming {
+            from{
+                transform: scale(0);
+            }
+            to{
+                transform: scale(1);
+            }
+        }
+
+        @keyframes movingUp {
+            from{
+                transform: translateY(200px);
+                opacity: 0;
+            }
+            to{
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1>Welcome</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quos
+        quaerat ad cupiditate sapiente, ex recusandae provident. Aperiam
+        cupiditate quae facere, a nemo quia, veritatis in fugit, odit quisquam
+        ex.
+      </p>
+    </div>
+
+    <div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam animi exercitationem perferendis deleniti beatae vitae atque obcaecati ratione quia, cum perspiciatis adipisci at vel eveniet, dolores suscipit iusto quaerat amet?
+        Atque fuga repudiandae omnis. Quaerat eius voluptates at incidunt, mollitia aperiam ipsa modi repellat fuga praesentium voluptatem dignissimos, dolore odio? Laboriosam voluptatum sint doloremque dolorum magnam dolorem voluptas libero perferendis.
+        Illo adipisci inventore dolorem porro incidunt pariatur voluptatem explicabo sunt deleniti consectetur quod officiis, rerum nesciunt aperiam voluptas veritatis reiciendis ipsa quam natus vitae enim. Laborum, nihil assumenda? Quam, in.
+        Necessitatibus delectus error nulla consequuntur eveniet facilis neque non expedita quia. Natus, magnam dolorem fugit ut illum possimus? Neque perferendis pariatur eum obcaecati at eius est iusto amet dignissimos officia.
+        Labore odit dignissimos dolorem fuga asperiores numquam tenetur voluptatem, quisquam veritatis molestias libero. Soluta quae est magnam, et atque deserunt. Rem voluptates quos pariatur quibusdam. Itaque error odit reprehenderit dolorem!
+        Sunt odit et impedit nulla fugiat facere! Magnam quos sed est necessitatibus asperiores dicta, ipsam fugiat tempore excepturi deleniti, perspiciatis ullam voluptate natus nisi ducimus. Sapiente veniam iusto quia cum!
+        Expedita quis praesentium ratione quia vel velit ipsam inventore sint, ipsum eveniet magni, alias quos aperiam. Iusto, soluta sint facere magni expedita consectetur accusantium assumenda nesciunt amet maxime repellendus quidem?
+        Ex vero, dolorum odit autem voluptatem laboriosam laudantium, libero rem, voluptate dolores enim. Tenetur nam quasi reiciendis sunt exercitationem beatae! Omnis repellat cum eos provident veniam molestias fuga incidunt aliquam?
+        Quasi deleniti accusamus magnam repellendus accusantium placeat nam minima nobis, illum fugit ut, a omnis? Nisi modi saepe illum cum doloremque et sunt sit impedit debitis culpa. Tempora, nemo quam.
+        Voluptas repudiandae obcaecati nemo rem modi, eligendi aliquam voluptatum ullam praesentium alias aspernatur deleniti! Nisi fugiat ab vel quia, illo culpa libero vitae, neque sequi nostrum accusamus, fugit cumque officia.
+    </div>
+  </body>
+</html>

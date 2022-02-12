@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://images.pexels.com/photos/15286/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login-box-main{
+    padding: 40px;
+    width: 30%;
+    backdrop-filter: blur(4px);
+    background-color:  rgba(206, 199, 199, 0.26); 
+    box-shadow: 0 0 10px black; 
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(100px);
+
+    background-color: rgba(206,199,199,0.479);
+}
+
+.logo{
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+
+}
+
+.form-group{
+    padding: 10px 0;
+}
+
+.form-group input:not([type="checkbox"]){
+    width: 100%;
+}
+
+.form-group input{
+    padding: 10px;
+    font-size: 18px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 4px;
+    color: white;
+    outline: none;
+}
+
+::placeholder{
+    color: white;
+    text-transform: capitalize;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+.form-group{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+input:checked + .remember{
+    transform: rotate(45deg) translateY(-4px);
+    border-top: none;
+    border-left: none;
+    height: 20px;
+    width: 10px;
+}
+
+.remember{
+    width: 15px;
+    height: 15px;
+    border: 1px solid white;
+    border-radius: 2px;
+    transition: .6s;
+}
+
+input[type="submit"]{
+    background-color: rgb(90,175,231);
+    border-color: rgb(90,175,231);
+}
+
+.form-group:last-child{
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+
+.form-group:last-child a{
+    color: white;
+    text-decoration: none;
+}

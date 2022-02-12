@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- details  -->
+    <!-- get post  -->
+    <!-- <form action="">
+        <table cellpadding="10px">
+            <tr>
+                <td> <label for="">First Name</label> </td>
+                <td> <input type="text"> </td>
+                <td> <label for="">last Name</label> </td>
+                <td><input type="text"></td>
+            </tr> 
+            <tr>
+                <td> <label for="">last Name</label> </td>
+                <td><input type="text"></td>
+            </tr> 
+            <tr>
+                <td> <label for="">password</label> </td>
+                <td><input type="text"></td>
+            </tr> 
+        </table>
+    </form> -->
+    <form method="post" action="thanku.html">
+        <label for="firstname">First Name</label> 
+        <input id="firstname" type="text" name="fname" required placeholder="Enter Your First Name" value="Alvin" tabindex="3"> 
+        <br>
+        <br>
+        <label>Last Name</label> <input type="text" name="lname" required>
+        <br>
+        <br>
+        <label for="password">Password</label> <input id="password" type="password" name="password" required tabindex="2">
+        <br>
+        <br>
+        <label>Email</label> <input type="email" placeholder="xyz@gmail.com" tabindex="1">
+        <br>
+        <br>
+        <label>Age</label> <input type="number" max="18" min="10" tabindex="4">
+        <br>
+        <br>
+        <label>Gender</label>
+        <!-- id -> input , for -> label -->
+        <input type="radio" id="male" name="gender"> <label for="male">Male</label>
+        <input type="radio" id="female" name="gender"> <label for="female">Female</label>
+        <br>
+        <br>
+        <label>Mobile Number</label> <input type="tel" minlength="10" maxlength="10">
+        <br>
+        <br>
+        <label for="">Hobbies</label>
+        <input type="checkbox" id="cricket"> <label for="cricket">cricket</label>
+        <input type="checkbox" id="football"> <label for="football">Football</label>
+        <input type="checkbox" id="tennis"> <label for="tennis">Tennis</label>
+        <br>
+        <br>
+        <input type="submit" value="Send"> <input type="reset" value="Clear">
+    </form>
+</body>
+</html>

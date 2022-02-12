@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .box {
+        width: 100%;
+        background-color: aquamarine;
+        /* vh -> view height */
+        height: 100vh;
+        padding: 100px;
+        border: 100px solid rgba(255, 0, 0, 0.164);
+        background-image: url(bg1.jpg);
+        background-repeat: no-repeat;
+        /* width , height */
+        /* background-size: 200px 500px; */
+        background-size: cover;
+        /* background-position: center; */
+        /* background-attachment: fixed; */
+        background-color: #00000050;
+        background-blend-mode: overlay;
+        background-origin: content-box;
+      }
+
+      /* 5 , 6 , 9 , 10 , 11 ,  */
+
+      .box2 {
+        width: 100%;
+        height: 100vh;
+        background-color: blueviolet;
+        background-image: url(bg2.jpg);
+        background-size: 300px;
+        background-repeat: no-repeat;
+        /* background-position: bottom left; */
+        background-position: 10px 500px;
+      }
+
+      .box3 {
+        width: 100%;
+        height: 100vh;
+        background-color: lavender;
+        background-image: url(png1.png), url(png2.png), url(bg1.jpg);
+        background-repeat: no-repeat;
+        background-size: 200px, 300px, 400px;
+        background-position: bottom right, left top, center;
+        background-attachment: fixed;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim velit,
+        quas repellendus sunt omnis ullam tempora nihil corrupti. Culpa officiis
+        odio fugit adipisci ab placeat explicabo aut nam? Dicta, recusandae?
+        Ipsum eius iure nam vero eum dolorum at, quasi ex porro magnam, mollitia
+        culpa ut dolore natus reprehenderit aspernatur rerum inventore. Pariatur
+        unde est nihil dolore reprehenderit eum, velit veritatis! Explicabo
+        quidem deleniti quam distinctio magni dolor nostrum numquam ipsam optio,
+        possimus provident doloribus facilis! Laboriosam earum numquam magnam
+        doloremque iusto dolorem, modi dolorum quis id, aliquam illum, est
+        corrupti! Dignissimos, nam numquam eligendi dolore minus libero voluptas
+        totam sapiente nihil similique soluta, voluptates velit officiis eos!
+        Excepturi temporibus vel ad assumenda vitae voluptatem omnis ut
+        dignissimos nam. Nam, corporis?
+      </p>
+    </div>
+
+    <div class="box2"></div>
+
+    <div class="box3"></div>
+  </body>
+</html>

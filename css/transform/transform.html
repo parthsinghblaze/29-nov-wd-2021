@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+     <!-- 
+        there are 4 type of transform 
+        1 -> rotate 
+        2 -> translate 
+        3 -> scale 
+        4 -> skew 
+     -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            transition-duration: 1s;
+        }
+
+        .box1{
+            background-color: orange;
+            /* transform: perspective(800px) rotateX(40deg) rotateY(-40deg) rotateZ(40deg); */
+
+        }
+
+        .box1:hover{
+            /* transform: perspective(800px) rotate(0); */
+            /* transform: perspective(800px) rotate3d(x,y,z,deg); */
+            transform: perspective(700px) rotate3d(0,0,1,-40deg);
+
+        }
+
+        .box2{
+            background-color: rgb(81, 255, 0);
+        }
+
+        .box2:hover{
+            transform: perspective(800px) translate3d(100px , 100px , 400px);
+        }
+
+        .box3{
+            background-color: orchid;
+        }
+
+        .box3:hover{
+            /* 1 => default 
+                2 => width * 2
+                3 => width * 3
+                1.5 => width * 1.5
+            */
+            transform: scale(2);
+        }
+
+        .box4{
+            background-color: palegreen;
+        }
+
+        .box4:hover{
+            transform: skew(10deg , 30deg);
+        }
+    </style>
+</head>
+<body>
+   <div class="box box1">
+        <h1>Rotate X</h1>
+   </div>
+
+   <div class="box box2">
+       <h1>Translate</h1>
+   </div>
+
+   <div class="box box3">
+       <h1>Scale</h1>
+   </div>
+
+   <div class="box box4">
+       <h1>Skew</h1>
+   </div>
+
+
+
+</body>
+</html>

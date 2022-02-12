@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .parent-box{
+            width: 90%;
+            height: 100vh;
+            border: 4px solid black;
+            margin: 0 auto;
+            display: flex;
+            /* flex-wrap: wrap; */
+            align-items: center;
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;
+            flex-grow: 1;
+            flex-basis: 300px;
+        }
+
+        .box1{
+            background-color: crimson;
+            /* flex-grow: 1; */
+            /* order: 2; */
+        }
+
+        .box2{
+            background-color: darkblue;
+            /* flex-grow: 2; */
+            /* order: 3; */
+            flex-shrink: 3;
+            /* flex-basis : width ;
+            flex-grow : grow ;
+            flex-shrink: decrease; */
+        }
+
+        .box3{
+            background-color: darkgreen;
+            /* flex-grow: 3; */
+            /* order: 1; */
+        }
+
+        .box4{
+            background-color: darkkhaki;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent-box">
+        <div class="box box1">
+            <h1>Box 1</h1>
+        </div>
+        <div class="box box2">
+            <h1>Box 2</h1>
+        </div>
+        <div class="box box3">
+            <h1>Box 3</h1>
+        </div>
+        <div class="box box1">
+            <h1>Box 1</h1>
+        </div>
+        <div class="box box2">
+            <h1>Box 2</h1>
+        </div>
+        <div class="box box3">
+            <h1>Box 3</h1>
+        </div>
+    </div>
+</body>
+</html>
