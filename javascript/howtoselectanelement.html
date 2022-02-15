@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="heading" title="just a title">I am Just a heading tag</h1>
+    <script>
+      // 1 -> give an id
+      // 2 -> getElementByID
+
+      //   DOM => DOCUMENT OBJECT MODEL
+      let heading = document.getElementById("heading");
+      //   console.log(heading.title);
+      console.log(heading.innerHTML);
+      heading.innerHTML = "Hey";
+      //   heading.title = "I am just a tag";
+      heading.style.color = "red";
+      //   background-color
+      heading.style.backgroundColor = "black";
+      heading.style.fontSize = "100px";
+
+      // let username
+      // let userName
+      // let user_name
+      //   let birthOfYear
+      //   let birthofyear
+      //   let birth_of_year
+    </script>
+  </body>
+</html>

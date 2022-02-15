@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="password" id="inputBox" />
+    <button onclick="ShwPass()" id="showBtn">Show</button>
+    <button onclick="HidePass()" id="hideBtn">Hide</button>
+    <script>
+      // Selecting an input Tag
+      let inputBox = document.getElementById("inputBox");
+      let showBtn = document.getElementById("showBtn");
+      let hideBtn = document.getElementById("hideBtn");
+
+      //   hiding the hide button
+      hideBtn.style.display = "none";
+      //   showing password
+      function ShwPass() {
+        inputBox.type = "text";
+        hideBtn.style.display = "inline-block";
+        showBtn.style.display = "none";
+      }
+
+      //   hiding a password
+      function HidePass() {
+        inputBox.type = "password";
+        hideBtn.style.display = "none";
+        showBtn.style.display = "inline-block";
+      }
+    </script>
+  </body>
+</html>

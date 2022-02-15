@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body id="myHTMLBody">
+    <h1 onclick="Details()">Function</h1>
+    <button onclick="Details()">Click Me</button>
+    <hr />
+    <hr />
+    <button onclick="bgGreen()">Green</button>
+    <button onclick="bgBlue()">Skyblue</button>
+    <script>
+      // selecting the body tag
+      //   let myHTMLBody = document.getElementById("myHTMLBody");
+
+      // green background function
+      function bgGreen() {
+        // myHTMLBody.style.backgroundColor = "green";
+        document.getElementById("myHTMLBody").style.backgroundColor = "green";
+      }
+
+      //   blue background function
+      function bgBlue() {
+        // myHTMLBody.style.backgroundColor = "skyblue";
+        document.getElementById("myHTMLBody").style.backgroundColor = "skyblue";
+      }
+
+      /*
+      // creating a function
+      // function functioName(){
+
+      // }
+
+      function Details() {
+        console.log("Hey my name is Harsh");
+        console.log("Hey");
+      }
+
+      //   calling a function
+      //   Details();
+      //   Details(); 
+      //   Details();
+      */
+    </script>
+  </body>
+</html>
