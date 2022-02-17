@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>inbuilt function</title>
+  </head>
+  <body id="bodyTag">
+    <h1>In built function</h1>
+    <button onclick="shwAlert()">Alert</button>
+    <button onclick="shwConf()">Confirm</button>
+    <button onclick="shwPtp()">Show Prompt</button>
+    <h1 id="showingName"></h1>
+    <script>
+      let bodyTag = document.getElementById("bodyTag");
+      let showingName = document.getElementById("showingName");
+
+      function shwPtp() {
+        let userName = prompt("Enter your name");
+        console.log(userName);
+        showingName.innerHTML = userName;
+      }
+
+      function shwAlert() {
+        alert("I am alert");
+      }
+
+      function shwConf() {
+        let yourAns = confirm("Are you Sure");
+        if (yourAns) {
+          console.log("Yes u have submitted the form");
+          bodyTag.style.backgroundColor = "green";
+          showingName.innerHTML = "Form Has submmitedd";
+        } else {
+          console.log("you have cancel the form");
+          bodyTag.style.backgroundColor = "red";
+          showingName.innerHTML = "you have cancel the form";
+        }
+      }
+    </script>
+  </body>
+</html>
