@@ -7,6 +7,15 @@
     <title>Document</title>
   </head>
   <body id="myHTMLBody">
+    <h1 id="heading" onclick="changeColor()">Hello World</h1>
+    <script>
+      let heading = document.getElementById("heading");
+
+      function changeColor() {
+        heading.style.color = "red";
+        heading.style.backgroundColor = "skyblue";
+      }
+    </script>
     <h1 onclick="Details()">Function</h1>
     <button onclick="Details()">Click Me</button>
     <hr />
