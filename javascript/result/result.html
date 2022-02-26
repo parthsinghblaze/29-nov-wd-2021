@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      table {
+        width: 400px;
+        background-color: skyblue;
+        margin: 100px auto;
+      }
+
+      td {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-box">
+      <h1 id="err"></h1>
+      <table id="my_table">
+        <tr>
+          <td>math</td>
+          <td><input type="text" id="math" /></td>
+        </tr>
+        <tr>
+          <td>Science</td>
+          <td><input type="text" id="science" /></td>
+        </tr>
+        <tr>
+          <td>Computer</td>
+          <td><input type="text" id="computer" /></td>
+        </tr>
+        <tr>
+          <td>English</td>
+          <td><input type="text" id="english" /></td>
+        </tr>
+        <tr>
+          <td>Total Marks</td>
+          <td><span id="total_marks"></span></td>
+        </tr>
+        <tr>
+          <td>Percentage</td>
+          <td><span id="percentage"></span></td>
+        </tr>
+        <tr>
+          <td>Grade</td>
+          <td><span id="grade"></span></td>
+        </tr>
+        <tr>
+          <td><button onclick="getResult()">Submit</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -8,6 +8,19 @@
   </head>
   <body>
     <script>
+      function login() {
+        let wantLogin = confirm("You want to Login");
+        if (wantLogin) {
+          return "login";
+        } else {
+          return "Dont Wan't To Login";
+        }
+      }
+
+      console.log(login());
+    </script>
+
+    <!-- <script>
       function basicCalc(num1, num2) {
         let add = num1 + num2;
         let sub = num1 - num2;
@@ -29,6 +42,6 @@
       }
 
       console.log(someMath());
-    </script>
+    </script> -->
   </body>
 </html>

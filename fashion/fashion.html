@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  </head>
+
+  <body>
+    <!--header start-->
+    <header class="container-fluid">
+      <div class="container">
+        <div class="top-header">
+          <a href="" class="logo">Dress-Up</a>
+          <nav>
+            <ul>
+              <li>
+                <a href="">Home</a>
+              </li>
+              <li>
+                <a href="">About</a>
+              </li>
+              <li>
+                <a href="">Services</a>
+              </li>
+              <li>
+                <a href="">Pages</a>
+                <ul>
+                  <li>
+                    <a href="">BLOG POSTS</a>
+                  </li>
+                  <li>
+                    <a href="">404 PAGE</a>
+                  </li>
+                  <li>
+                    <a href="">ELEMENTS PAGE</a>
+                  </li>
+                  <li>
+                    <a href="">LANDING PAGE</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="right-header">
+            <input type="text" placeholder="Enter Keywords..." />
+            <div><i class="fas fa-search"></i></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--header end-->
+    <!--slider start-->
+    <div class="container-fluid p-0">
+      <div class="slider">
+        <div class="slider-box slider-box-1">
+          <div>
+            <h3>Stiching</h3>
+            <h1>Your New Style</h1>
+            <button>View more</button>
+          </div>
+        </div>
+        <div class="slider-box slider-box-2">
+          <div>
+            <h3>New-Trends</h3>
+            <h1>Custom made Suits</h1>
+            <button>View more</button>
+          </div>
+        </div>
+        <div class="slider-box slider-box-3">
+          <div>
+            <h3>New Models</h3>
+            <h1>Embrace Your Style</h1>
+            <button>View more</button>
+          </div>
+        </div>
+        <div class="slider-box slider-box-4">
+          <div>
+            <h3>Fashion Looks</h3>
+            <h1>Style and Trends</h1>
+            <button>View more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $(".slider").bxSlider({
+          speed: 1000,
+          infiniteloop: true,
+          auto: true,
+          pager: false,
+        });
+      });
+    </script>
+    <!--slider end-->
+    <!--service start-->
+    <div class="container-fluid p-0 mt-5 service-mainbox">
+      <div class="container text-center">
+        <h3 class="title text-center">
+          Services we're
+          <span>Offering</span>
+        </h3>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="service-box">
+              <img src="m1.jpg" class="w-100" alt="" />
+              <div class="img1">
+                <h4>Measurements</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="icon1">
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="service-box">
+              <img src="m2.jpg" class="w-100" alt="" />
+              <div class="img1">
+                <h4>Repair</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="icon1">
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="service-box">
+              <img src="m3.jpg" class="w-100" alt="" />
+              <div class="img1">
+                <h4>Cutting-Out</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="icon1">
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="service-box">
+              <img src="m4.jpg" class="w-100" alt="" />
+              <div class="img1">
+                <h4>Resize</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="icon1">
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="b2">
+          <button>View More Services</button>
+        </div>
+      </div>
+    </div>
+    <!--service end-->
+    <!--textbox start-->
+    <div class="container-fluid p-0 py-5">
+      <div class="container">
+        <div class="txt text-center">
+          <h3>
+            What
+            <span>we do</span>
+            for our
+            <span> clients?</span>
+          </h3>
+        </div>
+        <div class="row py-5">
+          <div class="col-md-4">
+            <div class="t1">
+              <div class="t1-top">
+                <span><i class="fas fa-user-tie"></i></span>
+                <h2>01</h2>
+              </div>
+
+              <h2>Unique Design</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Tenetur, quam officia tempore et perspiciatis libero!
+              </p>
+              <button>Read More</button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="t1">
+              <div class="t1-top">
+                <span><i class="fas fa-cut"></i></span>
+                <h2>02</h2>
+              </div>
+              <h2>Custom Tailoring</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                veritatis numquam pariatur amet, molestiae libero?
+              </p>
+              <button>Read More</button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="t1">
+              <div class="t1-top">
+                <span><i class="fas fa-person-booth"></i></span>
+                <h2>03</h2>
+              </div>
+              <h2>Wedding Services</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus doloremque consequuntur porro molestiae quae
+                omnis.
+              </p>
+              <button>Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--textbox-end-->
+    <!--25 year exp start-->
+    <div class="container-fluid mt-5 mb-5 exp-mainbox">
+      <div class="container d-flex">
+        <div class="col-md-6">
+          <div class="year-box">
+            <h3>25 Years of experience</h3>
+            <p class="mt-3">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis, tempore minima distinctio natus quo iure non
+              inventore. Debitis exercitationem iure, ipsam omnis ipsa culpa
+              esse.
+            </p>
+            <p class="mt-3">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore,
+              obcaecati similique? In et maxime facilis ex ducimus, vero, velit
+              libero alias adipisci, voluptate deleniti sed?
+            </p>
+            <button>Know more about us</button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="exp-img">
+            <img src="v1.jpg" class="w-100" alt="" />
+            <span>
+              <i class="fa fa-play"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--25 year end-->
+    <div class="container-fluid appoin-mainbox mt-5">
+      <div class="container">
+        <div class="appoin">
+          <div class="col-md-7">
+            <h3>Your Design,We deliver</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+              aspernatur ea nam blanditiis provident rem maiores excepturi eos
+              eum voluptate!
+            </p>
+          </div>
+          <div class="col-md-5">
+            <button>Book your appointment</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid works-mainbox">
+      <div class="container">
+        <div class="works">
+          <div class="col-md-6">
+            <div class="work1">
+              <h3>Our Works</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Inventore eius quam sed eum adipisci voluptate tenetur
+                obcaecati, id est, nihil porro ullam modi provident enim.
+              </p>
+              <button>Read More</button>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img src="bg2.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--design start-->
+    <div class="container-fluid design-mainbox mb-5 p-0">
+      <div class="container">
+        <div class="design">
+          <div class="col-md-3">
+            <img src="bg3.jpg" class="w-100" alt="" />
+          </div>
+          <div class="col-md-3">
+            <div class="design-bx2 text-center">
+              <span><i class="fas fa-child"></i></span>
+              <h3>Our Designs</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <img src="bg4.jpg" class="w-100" alt="" />
+          </div>
+          <div class="col-md-3">
+            <div class="design-bx2 text-center">
+              <span><i class="fab fa-angellist mb-4"></i></span>
+              <h3>New Styles</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--design end-->
+    <!--footer start-->
+    <div class="container-fluid mt-5 mb-5">
+      <div class="container">
+        <h3 class="blog text-center mb-4">Our blog Posts</h3>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="img-top">
+              <div class="hello-img">
+                <img src="blog6.jpg" class="w-100" alt="" />
+                <div class="hello1">
+                  <span> <i class="fas fa-plus"></i></span>
+                </div>
+              </div>
+              <div class="hello-text">
+                <div class="w3">
+                  <div class="w3-detail d-flex">
+                    <span><i class="fas fa-user"></i></span>
+                    <h6>W3Layouts</h6>
+                  </div>
+                  <div class="w3-detail d-flex">
+                    <span><i class="fas fa-clock"></i></span>
+                    <h6>February 16,2022</h6>
+                  </div>
+                </div>
+                <h3>Hello world!</h3>
+                <button>Read more</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="img-top">
+              <div class="hello-img">
+                <img src="blog5.jpg" class="w-100" alt="" />
+                <div class="hello1">
+                  <span> <i class="fas fa-plus"></i></span>
+                </div>
+              </div>
+              <div class="hello-text">
+                <div class="w3">
+                  <div class="w3-detail d-flex">
+                    <span><i class="fas fa-user"></i></span>
+                    <h6>W3Layouts</h6>
+                  </div>
+                  <div class="w3-detail d-flex">
+                    <span><i class="fas fa-clock"></i></span>
+                    <h6>February 16,2022</h6>
+                  </div>
+                </div>
+                <h3>Set a Fashion Trend!</h3>
+                <button>Read more</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="img-top">
+              <div class="hello-img">
+                <img src="blog4.jpg" class="w-100" alt="" />
+                <div class="hello1">
+                  <span> <i class="fas fa-plus"></i></span>
+                </div>
+              </div>
+              <div class="hello-text">
+                <div class="w3">
+                  <div class="w3-detail d-flex">
+                    <span> <i class="fas fa-user"></i></span>
+                    <h6>W3Layouts</h6>
+                  </div>
+                  <div class="w3-detail d-flex">
+                    <span><i class="fas fa-clock"></i></span>
+                    <h6>February 16,2022</h6>
+                  </div>
+                </div>
+                <h3>How to Choose a Tie!</h3>
+                <button>Read more</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--footer end-->
+    <div class="container-fluid mt-5 end">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="dress">
+              <h3><b>Dress-up</b></h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti illum modi, similique ut alias eius animi neque fugiat
+                natus doloremque pariatur doloribus, dolore quos repellat!
+              </p>
+            </div>
+            <div class="social">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-linkedin-in"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-google-plus-g"></i>
+              <i class="fab fa-github"></i>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="row d-flex">
+              <div class="col-md-6">
+                <div class="quick">
+                  <h3>Quick Links</h3>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="contact">
+                  <h3>Contact Info</h3>
+                  <ul>
+                    <li>200N Grand Ave,#295</li>
+                    <li>LA,USA</li>
+                    <li>+11112223434</li>
+                    <li>info@example.com</li>
+                    <li>www.example.com</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="hours">
+              <h3>Opening Hours</h3>
+              <ul class="hours-list">
+                <li class=""><span>Hours</span> <span>9:00-18:00</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container py-5">
+        <hr />
+      </div>
+    </div>
+  </body>
+</html>

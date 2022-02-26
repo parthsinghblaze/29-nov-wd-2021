@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="showAlert()">Show me an alert</button>
+    <button onclick="showConfirm()">Submit Form</button>
+    <button onclick="showPrompt()">Want to add your name in our page</button>
+    <h2 id="answer"></h2>
+    <script>
+      // selecting a answer element
+      let answerElement = document.getElementById("answer");
+
+      // username
+      // userName
+      // user_name
+      // USERNAME
+      function showPrompt() {
+        let userName = prompt("Please enter our name");
+        answerElement.innerHTML = userName;
+      }
+
+      // confirm function
+      function showConfirm() {
+        //   getting value from the confirm as a boolean value
+        let isFormSubmited = confirm(
+          "Are your sure, your details will be submitted if you click OK!"
+        );
+
+        // showing the result as per submittion
+        if (isFormSubmited) {
+          answerElement.innerHTML = "Form has been submitted succesfully";
+        } else {
+          answerElement.innerHTML = "Form Submittion has been cancel";
+        }
+      }
+
+      //   alert function
+      function showAlert() {
+        alert("Hey i am just an in-built function of javascript");
+      }
+
+      // we where creating a function
+      // javascript function
+      // alert , confirm , prompt
+    </script>
+  </body>
+</html>

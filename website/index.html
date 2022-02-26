@@ -31,8 +31,11 @@
       <div class="container">
         <div class="top-header">
           <div class="logo">JAMES CONSULTING</div>
-          <button class="menu-btn"><i class="fa fa-bars"></i></button>
-          <nav>
+          <button class="menu-btn" onclick="openMenu()">
+            <i class="fa fa-bars"></i>
+          </button>
+          <nav class="nav" id="navbar">
+            <div class="close" onclick="closeMenu()">&times;</div>
             <ul>
               <li>About</li>
               <li>projects</li>
@@ -269,5 +272,7 @@
     </footer>
 
     <!-- footer end -->
+
+    <script src="js/main.js"></script>
   </body>
 </html>
