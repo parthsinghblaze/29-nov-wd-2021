@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+
+      .modal {
+        width: 400px;
+        background-color: rgb(233, 235, 135);
+        position: fixed;
+        top: -30%;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.6s;
+      }
+
+      .modal-open {
+        top: 10%;
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .modal-header {
+        padding: 10px;
+      }
+
+      .modal-body {
+        padding: 10px;
+      }
+
+      .modal-footer {
+        padding: 10px;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .modal-footer button {
+        background-color: rgb(219, 35, 35);
+        padding: 4px 10px;
+        font-size: 24px;
+        color: white;
+        border: none;
+        border-radius: 4px;
+      }
+
+      button {
+        background-color: rgb(155, 219, 35);
+        padding: 4px 10px;
+        font-size: 24px;
+        border: none;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="modal-button">Show modal</button>
+
+    <div class="modal">
+      <div class="modal-header">
+        <h2>I am Modal Box</h2>
+      </div>
+      <div class="modal-body">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+          consectetur iste, cupiditate exercitationem optio sequi excepturi
+          alias aspernatur temporibus harum, totam ea possimus fugiat dolores
+          voluptatem neque odio beatae deleniti?
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button id="modal-button-close">&times;</button>
+      </div>
+    </div>
+
+    <script>
+      let modalBtn = document.querySelector("#modal-button");
+      let modal = document.querySelector(".modal");
+      let modalButtonClose = document.querySelector("#modal-button-close");
+
+      modalBtn.addEventListener("click", () => {
+        modal.classList.add("modal-open");
+      });
+
+      modalButtonClose.addEventListener("click", () => {
+        modal.classList.remove("modal-open");
+      });
+    </script>
+  </body>
+</html>
