@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="inputBox" />
+    <button onclick="addData()">Add Element</button>
+    <ul id="unorder-list"></ul>
+
+    <p class="para">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum,
+      dignissimos qui mollitia dolor facilis, veniam molestias nemo perspiciatis
+      voluptates quo officia reprehenderit eveniet inventore natus. A
+      consequuntur quo rem? Animi.
+    </p>
+
+    <div class="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ad,
+      saepe, quas impedit harum dolorum reprehenderit doloremque quasi eum
+      necessitatibus tempore ipsa quibusdam aliquam, nulla tempora aliquid a
+      eius maxime.
+    </div>
+
+    <script>
+      let para = document.querySelectorAll(".para");
+
+      for (let singlePara of para)
+        singlePara.addEventListener("click", () => {
+          alert("Hey");
+        });
+
+      //   let inputBox = document.getElementById("inputBox");
+      //   let unorderList = document.getElementById("unorder-list");
+
+      //   function addData() {
+      //     let inputBoxValue = inputBox.value;
+      //     unorderList.insertAdjacentHTML(
+      //       "afterbegin",
+      //       `<li>${inputBoxValue}</li>`
+      //     );
+      //   }
+
+      //   unorderList.insertAdjacentHTML("afterend", "<h1> Unorder list </h1>");
+
+      //   let someData = ["Apple", "Banana", "Mango", "Orange", "pinaapple"];
+
+      //   for (let indexNumber = 0; indexNumber < someData.length; indexNumber++) {
+      //     console.log(someData[indexNumber]);
+      //   }
+
+      //   for (let arrayData of someData) {
+      //     console.log(arrayData);
+      //   }
+
+      // for(statement 1 ; statement 2; statement 3){
+
+      // }
+
+      //   statement1 = > initial value;
+      //   statement2 = > condition
+      //   statement - > increment / decrement
+
+      //   for (let number = 100; number >= 1; number--) {
+      //     console.log(number);
+      //   }
+    </script>
+  </body>
+</html>
